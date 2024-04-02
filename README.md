@@ -9,13 +9,13 @@
 ## Используемые материалы
 
 Проект сделан на React через create-react-app c использованием react-router-dom для навигации
-//
+
 Верстка на готовой библиотеке компонентов - @mui/material, @mui/x-data-grid
-//
+
 Бэк-энд сервер с возможность авторизации - json-server, json-server-auth
-//
+
 Работа с авторизацией внутри приложения - react-auth-kit
-//
+
 Запросы реализованы с помощью - axios
 
 ### Запуск и проверка проекта
@@ -29,7 +29,8 @@
 Логика всех запросов находится в директории `src/api/requests`
 
 Для тестирования функционала созданы два пользователя:
-login: `test1@mail.com`, password: `test1`
-login: `test2@mail.com`, password: `test2`
+
+1. login: `test1@mail.com`, password: `test1`
+2. login: `test2@mail.com`, password: `test2`
 
 Для каждого пользователя создано 3 разные тестовые задачи
