@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "email": "test1@mail.com",
+      "password": "$2a$10$eAYg2uh8nQXX8hvo0JvRe.Jh02fFBOjKDra6rqA2GmpOt1mKY7oUa",
+      "id": 1
+    },
+    {
+      "email": "test2@mail.com",
+      "password": "$2a$10$.5MUgVTh15IzLsRa598oieLF1MRPcMAdAn6f9fPIZMhKJ/nM1pOZW",
+      "id": 2
+    }
+  ],
+  "tasks" : [
+        {
+          "id": 1,
+          "author": 1,
+          "name": "Простецкая задача",
+          "description": "Выполнить тестовую задачу в обычном темпе",
+          "priority": "Средний",
+          "date": "05.03.2024",
+          "expectedTime": "11 days",
+          "spentedTime": "9 days",
+          "status": "В процессе"
+        },
+        {
+          "id": 2,
+          "author": 1,
+          "name": "Очень срочная тестовая задача",
+          "description": "Выполнить тестовую задачу в максимально быстрые сроки",
+          "priority": "Высокий",
+          "date": "22.02.2024",
+          "expectedTime": "20 hours",
+          "spentedTime": "12 hours",
+          "status": "Готово"
+        },
+        {
+          "id": 3,
+          "author": 1,
+          "name": "Черезвычайно отложенная тестовая задача",
+          "description": "Выполнить тестовую задачу по мере возможности",
+          "priority": "Низкий",
+          "date": "01.01.2024",
+          "expectedTime": "1 year",
+          "spentedTime": "0",
+          "status": "План"
+        },   
+        {
+          "id": 4,
+          "author": 2,
+          "name": "Крайне простая тестовая задача",
+          "description": "Выполнить тестовую задачу в обычном темпе",
+          "priority": "Средний",
+          "date": "05.03.2024",
+          "expectedTime": "4 days",
+          "spentedTime": "2 days",
+          "status": "В процессе"
+        },
+        {
+          "id": 5,
+          "author": 2,
+          "name": "Довольно таки срочная тестовая задача",
+          "description": "Выполнить тестовую задачу в максимально быстрые сроки",
+          "priority": "Высокий",
+          "date": "01.04.2024",
+          "expectedTime": "2 weeeks",
+          "spentedTime": " 12 days",
+          "status": "Готово"
+        },
+        {
+          "id": 6,
+          "author": 2,
+          "name": "тестовая задача которую отложили",
+          "description": "Выполнить тестовую задачу по мере возможности",
+          "priority": "Низкий",
+          "date": "01.01.2024",
+          "expectedTime": "1 month",
+          "spentedTime": "1 month 2 weeks",
+          "status": "План"
+        }
+      ]       
+}
