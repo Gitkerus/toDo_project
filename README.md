@@ -25,4 +25,7 @@
 Логика всех запросов находится в директории `src/api/requests`
 
 Для тестирования функционала созданы два пользователя:
-login: test1@mail.com, password: test1 и login: test2@mail.com, password: test2 со своими отдельными задачами
+login: `test1@mail.com`, password: `test1`
+login: `test2@mail.com`, password: `test2`
+
+Для каждого пользователя создано 3 разные тестовые задачи
