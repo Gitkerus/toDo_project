@@ -20,34 +20,6 @@ import Switch from "@mui/material/Switch";
 
 import { visuallyHidden } from "@mui/utils";
 
-function createData(id, name, description, status) {
-  return {
-    id,
-    name,
-    description,
-    status,
-  };
-}
-
-// const rows = [
-//   createData(1, "Задача 1", "Описание задачи", "В процессе"),
-//   createData(
-//     2,
-//     "Задача 2",
-//     "Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи",
-//     "В процессе",
-//     67,
-//     4.3
-//   ),
-//   createData(3, "Задача 3", "Описание задачи", "В процессе"),
-//   createData(4, "Задача 4", "Описание задачи", "В процессе"),
-//   createData(5, "Задача 5", "Описание задачи", "В процессе"),
-//   createData(6, "Задача 6", "Описание задачи", "В процессе"),
-//   createData(7, "Задача 7", "Описание задачи", "В процессе"),
-//   createData(8, "Задача 8", "Описание задачи", "В процессе"),
-// ];
-// console.log(rows);
-
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
     return -1;
