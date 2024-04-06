@@ -9,26 +9,8 @@ import Typography from "@mui/material/Typography";
 
 import EnhancedTable from "../components/DataTable";
 
-import { loadTasks } from "../api/requests";
-
 const Tasks = () => {
   const authData = useAuthUser();
-  const [tasksData, setTasksData] = useState("");
-
-  const getTasksData = useCallback(async () => {
-    const response = await loadTasks(authData.id);
-    setTasksData(response.data);
-  }, [tasksData]);
-
-  useEffect(() => {
-    getTasksData();
-    const intervalGet = setInterval(() => {
-      getTasksData();
-      console.log("new TasksData fethch");
-    }, 300000);
-
-    return () => clearInterval(intervalGet);
-  }, []);
 
   return (
     <>
@@ -49,17 +31,16 @@ const Tasks = () => {
           }}
         >
           <Typography
-            sx={{ textAlign: `center`, fontSize: `24px`, color: `#0047AB` }}
+            sx={{
+              textAlign: `center`,
+              fontSize: `24px`,
+              color: `#0047AB`,
+              marginBottom: `20px`,
+            }}
           >
             Tasks for user: {authData.email}
           </Typography>
-          {tasksData ? (
-            <EnhancedTable data={tasksData} />
-          ) : (
-            <Typography align="center" padding={20} fontSize={15}>
-              Table is loading...
-            </Typography>
-          )}
+          <EnhancedTable />
         </Card>
       </Paper>
     </>

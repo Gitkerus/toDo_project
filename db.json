@@ -70,12 +70,56 @@
         {
           "id": 6,
           "author": 2,
-          "name": "тестовая задача которую отложили",
+          "name": "Тестовая задача которую отложили",
           "description": "Выполнить тестовую задачу по мере возможности",
           "priority": "Низкий",
           "date": "01.01.2024",
           "expectedTime": "1 month",
           "spentedTime": "1 month 2 weeks",
+          "status": "План"
+        },
+        {
+          "id": 7,
+          "author": 1,
+          "name": "Что это за задача",
+          "description": "Сделать как нибудь",
+          "priority": "Низкий",
+          "date": "07.02.2024",
+          "expectedTime": "6 month",
+          "spentedTime": "34 days",
+          "status": "В процессе"
+        },
+        {
+          "id": 8,
+          "author": 1,
+          "name": "Это же тоже задача",
+          "description": "Пока что нет информации",
+          "priority": "Низкий",
+          "date": "04.06.2024",
+          "expectedTime": "5 month",
+          "spentedTime": "0 days",
+          "status": "План"
+        },
+        {
+          "id": 9,
+          "author": 1,
+          "name": "Закончить какое-то дело",
+          "description": "Нужно его точно закончить",
+          "priority": "Высокий",
+          "date": "06.03.2024",
+          "expectedTime": "12 hours",
+          "spentedTime": "9 hours",
+          "status": "Готово"
+        },
+        {
+          "id": 10,
+          "author": 1,
+          "name": "Мы забыли и про эту задачу",
+          "description": "Когда будет время, сделай её",
+          "priority": "Низкий",
+          "date": "02.03.2024",
+          "expectedTime": "1 year",
+          "spentedTime": "0 days",
           "status": "План"
         }
       ]       

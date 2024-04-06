@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import axios, { AxiosError } from "axios";
-import { loginRequest } from "../api/requests";
+import { AxiosError } from "axios";
+import { loginRequest } from "../api/apiRequests";
 
 import useSignIn from "react-auth-kit/hooks/useSignIn";
 
@@ -51,8 +51,7 @@ const Login = () => {
       setFormValuesMiss(true);
     }
     try {
-      const response = await loginRequest(email, password);
-      console.log(response);
+      const response = await loginRequest({ email: email, password: password });
       setPassword("");
       setEmail("");
       signIn({

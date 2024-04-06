@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import useAuthUser from "react-auth-kit/hooks/useAuthUser";
 
-import { loadSingleTask } from "../api/requests";
+import { loadingTasksData } from "../api/apiRequests";
 
 import { Paper, Card, Typography, Button } from "@mui/material";
 
@@ -15,9 +15,8 @@ const SingleTask = () => {
   const [singleTaskData, setSingleTaskData] = useState(null);
 
   const getTaskData = useCallback(async () => {
-    const response = await loadSingleTask(authData.id, id);
+    const response = await loadingTasksData({ author: authData.id, id: id });
     setSingleTaskData(response.data[0]);
-    console.log(response.data[0]);
   }, [singleTaskData]);
 
   const handleClick = () => {
@@ -28,7 +27,7 @@ const SingleTask = () => {
     getTaskData();
     const intervalGet = setInterval(() => {
       getTaskData();
-      console.log("new singleTaskData fethch");
+      console.log("new singleTaskData fetch");
     }, 300000);
 
     return () => clearInterval(intervalGet);
